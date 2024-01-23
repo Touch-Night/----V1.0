@@ -1,6 +1,6 @@
 # Project Name
 
-@HunterShenSmzh 写的用来汉化Mtool导出的rpg游戏的文本的工具，打算把它做成tgw的插件。
+[@HunterShenSmzh](https://github.com/HunterShenSmzh) 写的用来汉化Mtool导出的rpg游戏的文本的工具，打算把它做成tgw的插件。
 
 ## Table of Contents
 

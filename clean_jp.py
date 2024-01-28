@@ -1,5 +1,14 @@
 import json
 import re
+import os
+import sys
+
+raw_data = "ManualTransFile.json"
+
+# 检查原始数据是否存在
+if not os.path.exists(raw_data):
+    print(f"文件 {raw_data} 不存在，请先将MTool导出的文本放置到当前目录")
+    sys.exit(1)
 
 def clean_json(input_file_path, dictionary_file_path, output_file_path):
     # 读取字典文件
@@ -48,7 +57,7 @@ def clean_json(input_file_path, dictionary_file_path, output_file_path):
 
 # 文件路径
 input_file_path = 'ManualTransFile.json'  # 原始数据文件
-dictionary_file_path = '屏蔽字典.json'  # 字典文件
+dictionary_file_path = '内置参数/屏蔽字典.json'   # 字典文件
 output_file_path = '清理后的数据.json'  # 清理后数据的保存路径
 
 # 使用脚本
